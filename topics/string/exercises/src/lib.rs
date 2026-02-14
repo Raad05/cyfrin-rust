@@ -7,6 +7,6 @@ pub fn greet(name: &str) -> String {
 }
 
 pub fn append(mut s: String) -> String {
-    s += "i";
+    s += "!";
     s
 }
