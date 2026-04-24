@@ -14,6 +14,20 @@ pub struct VecIter<T> {
 
 impl<T> Iterator<T> for TupleIter<T> {
     fn next(&mut self) -> Option<&T> {
-        todo!();
+        match self.next {
+            0 => {
+                self.next += 1;
+                Some(&self.tuple.0)
+            }
+            1 => {
+                self.next += 1;
+                Some(&self.tuple.1)
+            }
+            2 => {
+                self.next += 1;
+                Some(&self.tuple.2)
+            }
+            _ => None,
+        }
     }
 }
