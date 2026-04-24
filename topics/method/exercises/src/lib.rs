@@ -6,6 +6,7 @@ pub struct Rectangle {
     pub height: u32,
 }
 
+// methods for Rectangle
 impl Rectangle {
     pub fn new(width: u32, height: u32) -> Self {
         Self {
